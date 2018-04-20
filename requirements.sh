@@ -6,3 +6,8 @@ set -e
 apt-get update
 apt-get install -y libcurl4-openssl-dev libxml2-dev
 
+mkdir -p /home/repl/datasets
+mv kaggle-survey-2017.zip /home/repl/datasets
+cd /home/repl/datasets
+unzip kaggle-survey-2017.zip
+chmod a+rw ./*
